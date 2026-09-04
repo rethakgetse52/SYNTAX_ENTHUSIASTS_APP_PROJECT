@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preview and download your Jobify CV.">
+    <title>CV Preview | Jobify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header no-print">
+    <div class="header-inner">
+        <a href="index.html" class="logo">Jobify</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="cv-form.html">Edit CV</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="cv-preview-section">
+
+        <div class="preview-heading no-print">
+            <span class="eyebrow">YOUR CV</span>
+            <h1>CV Preview</h1>
+            <p>
+                Review your information before downloading your CV.
+            </p>
+        </div>
+
+        <div class="cv-preview-card" id="cvPreview">
+
+            <div class="cv-header">
+                <h1 id="previewName">Your Name</h1>
+
+                <div class="cv-contact">
+                    <span id="previewEmail"></span>
+                    <span id="previewPhone"></span>
+                    <span id="previewSector"></span>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Professional Summary</h2>
+                <p id="previewSummary"></p>
+            </div>
+
+            <div class="cv-section">
+                <h2>Education</h2>
+                <p id="previewEducation"></p>
+            </div>
+
+            <div class="cv-section">
+                <h2>Skills</h2>
+                <p id="previewSkills"></p>
+            </div>
+
+            <div class="cv-section">
+                <h2>Work Experience</h2>
+                <p id="previewExperience"></p>
+            </div>
+
+        </div>
+
+        <div class="preview-buttons no-print">
+
+            <a href="cv-form.html" id="editCVButton" class="button button-secondary">
+                Edit My CV
+            </a>
+
+            <button id="downloadButton" class="button button-primary">
+                Download CV as PDF
+            </button>
+
+            <button id="jobButton" class="button button-dark">
+                View Job Recommendations
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer no-print">
+    <div class="footer-bottom">
+        <p>&copy; 2026 Jobify. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

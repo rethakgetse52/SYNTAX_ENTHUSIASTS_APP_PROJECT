@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Jobify career recommendations.">
+    <title>Job Recommendations | Jobify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">Jobify</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="cv-form.html">Edit CV</a>
+            <a href="cv-preview.html">CV Preview</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="recommendations-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">CAREER DISCOVERY</span>
+            <h1>Job Recommendations</h1>
+            <p id="recommendationMessage">
+                Looking at your selected career sector...
+            </p>
+        </div>
+
+        <div id="jobList" class="job-list"></div>
+
+        <div class="recommendation-actions">
+            <a
+                href="cv-preview.html"
+                id="backToCVButton"
+                class="button button-secondary"
+            >
+                Back to My CV
+            </a>
+
+            <a
+                href="cv-form.html"
+                class="button button-primary"
+            >
+                Change My Sector
+            </a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>&copy; 2026 Jobify. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

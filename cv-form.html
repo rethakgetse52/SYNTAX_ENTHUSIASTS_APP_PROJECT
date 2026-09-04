@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your professional CV with Jobify.">
+    <title>Create Your CV | Jobify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">Jobify</a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="cv-form.html" class="active">Create CV</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="cv-form-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">YOUR CAREER</span>
+            <h1>Create Your CV</h1>
+            <p>
+                Complete the information below to generate your professional CV.
+            </p>
+        </div>
+
+        <form id="cvForm">
+
+            <div class="form-section">
+                <h2>Personal Details</h2>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="e.g. John Smith"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="john@example.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+27 00 000 0000"
+                            autocomplete="tel"
+                            required
+                        >
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Professional Summary</h2>
+
+                <div class="form-group">
+                    <label for="summary">Summary</label>
+                    <textarea
+                        id="summary"
+                        rows="5"
+                        placeholder="Write a short professional introduction about yourself..."
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Education</h2>
+
+                <div class="form-group">
+                    <label for="education">Education</label>
+                    <textarea
+                        id="education"
+                        rows="5"
+                        placeholder="Example: Diploma in Information Technology, ABC College, 2025"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Skills</h2>
+
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <textarea
+                        id="skills"
+                        rows="5"
+                        placeholder="Example: HTML, CSS, JavaScript, Communication, Problem Solving"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Work Experience</h2>
+
+                <div class="form-group">
+                    <label for="experience">Work Experience</label>
+                    <textarea
+                        id="experience"
+                        rows="5"
+                        placeholder="Describe your previous work experience, internships, volunteering or projects..."
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Career Sector</h2>
+
+                <div class="form-group">
+                    <label for="sector">Choose a Sector</label>
+                <select id="sector" required>
+                    <option value="">-- Select a sector --</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="AI & Machine Learning">AI & Machine Learning</option>
+                    <option value="Auditing">Auditing</option>
+                    <option value="Aviation">Aviation</option>
+                    <option value="Banking">Banking</option>
+                    <option value="Biotechnology">Biotechnology</option>
+                    <option value="Business Management">Business Management</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Culinary Arts">Culinary Arts</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="Data Science & Analytics">Data Science & Analytics</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Education & Teaching">Education & Teaching</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Energy & Utilities">Energy & Utilities</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Environmental Science">Environmental Science</option>
+                    <option value="Fashion & Textiles">Fashion & Textiles</option>
+                    <option value="Film & Television">Film & Television</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Government">Government</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Hospitality & Tourism">Hospitality & Tourism</option>
+                    <option value="Human Resources(HR)">Human Resources(HR)</option>
+                    <option value="Information Technology(IT)">Information Technology(IT)</option>
+                    <option value="Insurance">Insurance</option>
+                    <option value="Journalism">Journalism</option>
+                    <option value="Law & Legal Services">Law & Legal Services</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Maritime">Maritime</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Media & Communications">Media & Communications</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Mining Engineering">Mining Engineering</option>
+                    <option value="Music & Performing Arts">Music & Performing Arts</option>
+                    <option value="Networking & Telecommunications">Networking & Telecommunications</option>
+                    <option value="Non-Profit & NGO">Non-Profit & NGO</option>
+                    <option value="Nursing">Nursing</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="Project Management">Project Management</option>
+                    <option value="Procurement">Procurement</option>
+                    <option value="Psychology">Psychology</option>
+                    <option value="Public Administration">Public Administration</option>
+                    <option value="Public Health">Public Health</option>
+                    <option value="Real Estate">Real Estate</option>
+                    <option value="Renewable Energy">Renewable Energy</option>
+                    <option value="Research & Development">Research & Development</option>
+                    <option value="Retail">Retail</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Social Work">Social Work</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Supply Chain & Logistics">Supply Chain & Logistics</option>
+                    <option value="Teaching">Teaching</option>
+                    <option value="Telecommunications">Telecommunications</option>
+                    <option value="Transport & Logistics">Transport & Logistics</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Veterinary Science">Veterinary Science</option>
+                    <option value="Other">Other</option>
+
+                    
+
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <a href="index.html" class="button button-secondary">
+                    Back Home
+                </a>
+
+                <button type="submit" class="button button-primary">
+                    Preview My CV
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="footer-bottom">
+        <p>&copy; 2026 Jobify. All rights reserved.</p>
+        <p>Contact: applywithusalways@gmail.com</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

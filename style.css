@@ -1,0 +1,879 @@
+/* =========================================================
+   JOBIFY - GLOBAL STYLES
+   ========================================================= */
+
+:root {
+    --primary: #1e3a8a;
+    --primary-dark: #172554;
+    --primary-light: #dbeafe;
+    --accent: #2563eb;
+
+    --background: #eef4fb;
+    --white: #ffffff;
+    --text: #1f2937;
+    --muted: #64748b;
+    --border: #cbd5e1;
+
+    --success: #15803d;
+    --error: #dc2626;
+
+    --shadow: 0 12px 35px rgba(15, 23, 42, 0.10);
+    --radius: 12px;
+}
+
+
+/* -----------------------------
+   Reset
+----------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* -----------------------------
+   Header
+----------------------------- */
+
+.site-header {
+    background: var(--primary);
+    color: white;
+    padding: 18px 6%;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #bfdbfe;
+}
+
+.main-nav .nav-button {
+    background: white;
+    color: var(--primary);
+    padding: 9px 16px;
+    border-radius: 7px;
+}
+
+.main-nav .nav-button:hover {
+    color: var(--primary-dark);
+    background: #eff6ff;
+}
+
+
+/* -----------------------------
+   Hero
+----------------------------- */
+
+.hero {
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.76),
+            rgba(30, 58, 138, 0.72)
+        ),
+        url("https://measuredability.com/wp-content/uploads/2025/05/job-search-registered-nurse-south-africa-career-opportunities.png-1030x687-1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 6%;
+    color: white;
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero .eyebrow {
+    color: #bfdbfe;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 68px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #e2e8f0;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+
+/* -----------------------------
+   Buttons
+----------------------------- */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.button-primary:hover {
+    background: var(--primary-dark);
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.25);
+}
+
+.hero .button-primary {
+    background: white;
+    color: var(--primary);
+}
+
+.hero .button-primary:hover {
+    background: #eff6ff;
+}
+
+.button-secondary {
+    background: #e2e8f0;
+    color: var(--text);
+}
+
+.button-secondary:hover {
+    background: #cbd5e1;
+}
+
+.hero .button-secondary {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.65);
+    color: white;
+}
+
+.hero .button-secondary:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+.button-dark {
+    background: #0f172a;
+    color: white;
+}
+
+.button-dark:hover {
+    background: #020617;
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+/* -----------------------------
+   Sections
+----------------------------- */
+
+.section {
+    padding: 90px 6%;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h1,
+.section-heading h2 {
+    color: var(--primary);
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+
+/* -----------------------------
+   Features
+----------------------------- */
+
+.features {
+    background: #f8fafc;
+}
+
+.feature-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.feature-card {
+    background: white;
+    padding: 32px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 50%;
+    background: var(--primary-light);
+    color: var(--primary);
+
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.feature-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.feature-card p {
+    color: var(--muted);
+}
+
+
+/* -----------------------------
+   About
+----------------------------- */
+
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about h2 {
+    color: var(--primary);
+    font-size: clamp(30px, 5vw, 44px);
+    margin-bottom: 18px;
+}
+
+.about p {
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+
+/* -----------------------------
+   Footer
+----------------------------- */
+
+.site-footer {
+    background: #0f172a;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-content h2,
+.footer-content h3 {
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    color: #cbd5e1;
+}
+
+.footer-bottom {
+    padding: 18px 6%;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    color: #94a3b8;
+}
+
+
+/* -----------------------------
+   Authentication
+----------------------------- */
+
+.auth-page {
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #eff6ff
+        );
+}
+
+.auth-main {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 480px;
+
+    background: white;
+    padding: 40px;
+
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.auth-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-heading h1 {
+    color: var(--primary);
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.auth-heading p {
+    color: var(--muted);
+}
+
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--muted);
+}
+
+.auth-footer a {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/* -----------------------------
+   Forms
+----------------------------- */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #334155;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background: white;
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--accent);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-message {
+    min-height: 24px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-message.error {
+    color: var(--error);
+}
+
+.form-message.success {
+    color: var(--success);
+}
+
+
+/* -----------------------------
+   CV Form
+----------------------------- */
+
+.cv-form-section {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.cv-form-section > form {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-section {
+    padding-bottom: 28px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.form-section h2 {
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+/* -----------------------------
+   CV Preview
+----------------------------- */
+
+.cv-preview-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.preview-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.preview-heading h1 {
+    color: var(--primary);
+    font-size: 42px;
+}
+
+.preview-heading p {
+    color: var(--muted);
+}
+
+.cv-preview-card {
+    background: white;
+    padding: 50px;
+
+    box-shadow: var(--shadow);
+
+    border-radius: 4px;
+}
+
+.cv-header {
+    padding-bottom: 25px;
+    border-bottom: 3px solid var(--primary);
+}
+
+.cv-header h1 {
+    color: var(--primary);
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.cv-contact {
+    display: flex;
+    gap: 8px 20px;
+    flex-wrap: wrap;
+
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.cv-contact span {
+    overflow-wrap: anywhere;
+}
+
+.cv-section {
+    padding-top: 25px;
+}
+
+.cv-section h2 {
+    color: var(--primary);
+    font-size: 20px;
+
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+
+    border-bottom: 1px solid #dbeafe;
+}
+
+.cv-section p {
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+    color: #334155;
+}
+
+.preview-buttons {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+/* -----------------------------
+   Job Recommendations
+----------------------------- */
+
+.recommendations-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.job-card {
+    background: white;
+    padding: 28px;
+
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+
+    border-top: 4px solid var(--primary);
+}
+
+.job-number {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.job-card h2 {
+    color: var(--primary);
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.job-sector {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+    background: var(--primary-light);
+
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.recommendation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+
+/* -----------------------------
+   Responsive Design
+----------------------------- */
+
+@media (max-width: 850px) {
+
+    .header-inner {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .feature-container,
+    .job-list {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .main-nav {
+        gap: 10px 14px;
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 580px;
+    }
+
+    .hero-content {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .auth-card,
+    .cv-form-section > form {
+        padding: 25px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .cv-preview-card {
+        padding: 28px 20px;
+    }
+
+    .cv-header h1 {
+        font-size: 30px;
+    }
+
+    .cv-contact {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .form-actions,
+    .preview-buttons,
+    .recommendation-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .button,
+    .preview-buttons .button,
+    .recommendation-actions .button {
+        width: 100%;
+    }
+}
+
+
+/* -----------------------------
+   PDF / Print
+----------------------------- */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .cv-preview-section {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+
+    .cv-preview-card {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 25px;
+    }
+}
