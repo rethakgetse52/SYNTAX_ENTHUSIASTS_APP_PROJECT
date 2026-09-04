@@ -1,5 +1,5 @@
 # syntax-enthusiasts-
-# The name of the app hasn't been decided yet.
+# JOBIFY
 # Smart CV Job Recommender
 
 ## Description
